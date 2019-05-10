@@ -8,6 +8,7 @@ public class MusinsaApplication {
 
     public static void main(String[] args) {
         System.out.println("sdkmfklsmdfklsmdfklmsdifjsoidnf");
+        System.out.println("sdkmfklsmdfklsmdfklmsdifjsoidnf");
         SpringApplication.run(MusinsaApplication.class, args);
     }
 
