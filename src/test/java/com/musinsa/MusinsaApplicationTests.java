@@ -12,7 +12,7 @@ public class MusinsaApplicationTests {
 
     @Test
     public void contextLoads() {
-        Assert.assertFalse(true);
+//        Assert.assertFalse(true);
     }
 
 }
