@@ -5,6 +5,7 @@ plugins {
 }
 
 apply plugin: 'io.spring.dependency-management'
+apply plugin: 'jacoco'
 
 group = 'com.musinsa'
 version = '0.0.1-SNAPSHOT'
@@ -18,6 +19,24 @@ configurations {
 
 repositories {
     mavenCentral()
+}
+
+
+jacoco {
+    reportsDir = file("${buildDir}/reports")
+    toolVersion = "0.8.2"
+}
+
+jacocoTestCoverageVerification {
+    violationRules {
+        rule {
+            limit {
+                counter = 'LINE'
+                value = 'COVEREDRATIO'
+                minimum = 1.0
+            }
+        }
+    }
 }
 
 dependencies {
